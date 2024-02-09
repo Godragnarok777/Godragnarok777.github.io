@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Comandos</title>
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFFFFF;
+}
+body {
+	background-color: #000000;
+}
+.Estilo1 {
+	color: #FFFF00;
+	font-size: 24px;
+}
+.Estilo2 {
+	font-size: 24;
+	color: #FFFF00;
+}
+.Estilo3 {color: #FFFF00}
+.Estilo5 {color: #FFFFFF}
+-->
+</style></head>
+
+<body>
+<div align="center"><span class="Estilo1">Comandos:</span></div>
+<blockquote>
+  <p>Cow tiene un conjunto muy limitado de comandos, lo que lo hace muy f&aacute;cil de aprender.</p>
+  <table bordercolor="#FFFF00" bgcolor="#000000">
+    <tbody>
+      <tr>
+        <th height="27" bordercolor="#FFFF00" _msttexthash="211250" _msthash="134"><span class="Estilo3">Instrucci&oacute;n</span></th>
+        <th bordercolor="#FFFF00" _msttexthash="207974" _msthash="135"><span class="Estilo2">Descripci&oacute;n</span></th>
+      </tr>
+      <tr>
+        <td height="66" bordercolor="#FFFF00" _msttexthash="64090" _msthash="136">moo</td>
+        <td bordercolor="#FFFF00" _msttexthash="56033705" _msthash="137"><span class="Estilo5">Este comando est&aacute; conectado al comando MOO. Cuando se encuentra durante la ejecuci&oacute;n normal, busca en el c&oacute;digo del programa a la inversa un comando MOO coincidente y comienza a ejecutarse de nuevo a partir del comando MOO encontrado. Al realizar una b&uacute;squeda, se salta la instrucci&oacute;n que est&aacute; inmediatamente antes de ella (ver MOO).</span></td>
+      </tr>
+      <tr>
+        <td height="27" bordercolor="#FFFF00" _msttexthash="64090" _msthash="138">mOo</td>
+        <td bordercolor="#FFFF00" _msttexthash="2321878" _msthash="139"><span class="Estilo5">Mueve la posici&oacute;n actual de la memoria hacia atr&aacute;s un bloque.</span></td>
+      </tr>
+      <tr>
+        <td height="26" bordercolor="#FFFF00" _msttexthash="64090" _msthash="140">moO</td>
+        <td bordercolor="#FFFF00" _msttexthash="2470377" _msthash="141"><span class="Estilo5">Mueve la posici&oacute;n actual de la memoria hacia adelante un bloque.</span></td>
+      </tr>
+      <tr>
+        <td height="65" bordercolor="#FFFF00" _msttexthash="64090" _msthash="142">mOO</td>
+        <td bordercolor="#FFFF00" _msttexthash="59644923" _msthash="143"><span class="Estilo5">Ejecute el valor en el bloque de memoria actual como si fuera una instrucci&oacute;n. El comando ejecutado se basa en el valor del c&oacute;digo de instrucci&oacute;n (por ejemplo, si el bloque de memoria actual contiene un 2, se ejecuta el comando moO). Un comando no v&aacute;lido sale del programa en ejecuci&oacute;n. El valor 3 no es v&aacute;lido, ya que provocar&iacute;a un bucle infinito.</span></td>
+      </tr>
+      <tr>
+        <td height="49" bordercolor="#FFFF00" _msttexthash="61178" _msthash="144">Moo</td>
+        <td bordercolor="#FFFF00" _msttexthash="29802487" _msthash="145"><span class="Estilo5">Si el bloque de memoria actual tiene un 0, lea un solo car&aacute;cter ASCII de STDIN y gu&aacute;rdelo en el bloque de memoria actual. Si el bloque de memoria actual no es 0, imprima el car&aacute;cter ASCII que corresponde al valor del bloque de memoria actual en STDOUT.</span></td>
+      </tr>
+      <tr>
+        <td height="27" bordercolor="#FFFF00" _msttexthash="61178" _msthash="146">MOo</td>
+        <td bordercolor="#FFFF00" _msttexthash="1655862" _msthash="147"><span class="Estilo5">Disminuya el valor actual del bloque de memoria en 1.</span></td>
+      </tr>
+      <tr>
+        <td height="30" bordercolor="#FFFF00" _msttexthash="61178" _msthash="148">MoO</td>
+        <td bordercolor="#FFFF00" _msttexthash="1721707" _msthash="149"><span class="Estilo5">Incremente el valor actual del bloque de memoria en 1.</span></td>
+      </tr>
+      <tr>
+        <td height="87" bordercolor="#FFFF00" _msttexthash="45370" _msthash="150">MOO</td>
+        <td bordercolor="#FFFF00" _msttexthash="123276114" _msthash="151"><span class="Estilo5">Si el valor actual del bloque de memoria es 0, omita el siguiente comando y reanude la ejecuci&oacute;n despu&eacute;s del siguiente comando moo coincidente. Si el valor actual del bloque de memoria no es 0, contin&uacute;e con el siguiente comando. Tenga en cuenta que el hecho de que omita el comando inmediatamente posterior tiene ramificaciones interesantes para saber d&oacute;nde est&aacute; realmente el comando moo correspondiente. Por ejemplo, lo siguiente coincidir&aacute; con el segundo moo y no con el primero: OOO MOO moo moo</span></td>
+      </tr>
+      <tr>
+        <td bordercolor="#FFFF00" _msttexthash="20696" _msthash="152">OOO</td>
+        <td bordercolor="#FFFF00" _msttexthash="1718444" _msthash="153"><span class="Estilo5">Establezca el valor actual del bloque de memoria en 0.</span></td>
+      </tr>
+      <tr>
+        <td height="46" bordercolor="#FFFF00" _msttexthash="24024" _msthash="154">MMM</td>
+        <td bordercolor="#FFFF00" _msttexthash="17657146" _msthash="155"><span class="Estilo5">Si no hay ning&uacute;n valor actual en el registro, copie el valor actual del bloque de memoria. Si hay un valor en el registro, pegue ese valor en el bloque de memoria actual y borre el registro.</span></td>
+      </tr>
+      <tr>
+        <td height="25" bordercolor="#FFFF00" _msttexthash="24414" _msthash="156">OOM</td>
+        <td bordercolor="#FFFF00" _msttexthash="3494959" _msthash="157"><span class="Estilo5">Imprime el valor del bloque de memoria actual en STDOUT como un n&uacute;mero entero.</span></td>
+      </tr>
+      <tr>
+        <td height="34" bordercolor="#FFFF00" _msttexthash="50973" _msthash="158">oom</td>
+        <td bordercolor="#FFFF00" _msttexthash="3017716" _msthash="159"><span class="Estilo5">Lea un n&uacute;mero entero de STDIN y col&oacute;quelo en el bloque de memoria actual.</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p align="left">En general, Cow es un lenguaje de programaci&oacute;n muy sencillo y f&aacute;cil de aprender, pero su limitado conjunto de comandos lo hace menos adecuado para programas complejos.</p>
+  <p align="justify">&nbsp;</p>
+  <p align="justify">&nbsp;</p>
+</blockquote>
+</body>
+</html>
